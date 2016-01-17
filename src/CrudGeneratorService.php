@@ -132,7 +132,7 @@ class CrudGeneratorService
         }
         
 
-        $columns = $this->getColumns($prefix.($table_name ?: str_plural($modelname)));
+        $columns = $this->getColumns($prefix.($table_name ?: strtolower(str_plural($modelname))));
 
         $cc = collect($columns);
 
