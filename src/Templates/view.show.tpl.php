@@ -13,7 +13,6 @@
 
     <div class="panel-body">
                 
-        <form action="{{ url('/[[route_path]]') }}" method="POST" class="form-horizontal">
         [[foreach:columns]]
         
         <div class="form-group">
@@ -31,8 +30,7 @@
             </div>
         </div>
 
-        </form>
-    
+
 
     </div>
 </div>
